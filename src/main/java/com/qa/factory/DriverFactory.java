@@ -31,6 +31,7 @@ public class DriverFactory {
             tlDriver.set(new FirefoxDriver());
 
         } else if (browser.equals("safari")) {
+            WebDriverManager.safaridriver().setup();
             tlDriver.set(new SafariDriver());
 
         } else {

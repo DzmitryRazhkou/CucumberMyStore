@@ -8,12 +8,12 @@ import org.junit.Assert;
 
 public class OrderPageSteps {
 
-    private FadedShortSleeveTShirtsPage fadedShortSleeveTShirtsPage = new FadedShortSleeveTShirtsPage(DriverFactory.getWebDriver());
-    private OrderPage orderPage = new OrderPage(DriverFactory.getWebDriver());
+
+    private final OrderPage orderPage = new OrderPage(DriverFactory.getWebDriver());
 
     @When("User clicks at the proceed to order page")
     public void user_clicks_at_the_proceed_to_order_page() {
-        orderPage = fadedShortSleeveTShirtsPage.proceedToOrderPage();
+
     }
 
     @When("User navigates at the order page")
